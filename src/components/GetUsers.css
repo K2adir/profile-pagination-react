@@ -1,0 +1,16 @@
+.profile__card {
+  display: flex;
+  /* flex-direction: column;  */
+  width: 30rem;
+  outline: 1px orange solid;
+}
+
+.profile__card img {
+  object-fit: cover;
+}
+
+.profile__card p {
+  outline: 1px red solid;
+  flex-grow: 1;
+  margin: 0; /* remove any default margin */
+}
