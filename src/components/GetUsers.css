@@ -1,16 +1,63 @@
-.profile__card {
+.container {
   display: flex;
-  /* flex-direction: column;  */
-  width: 30rem;
-  outline: 1px orange solid;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px red solid;
+  padding: 1rem;
 }
 
-.profile__card img {
+.profile__card {
+  display: flex;
+  width: 35rem;
+  border: 1px black solid;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.profile__pic {
+  width: 250px;
+  height: 250px;
   object-fit: cover;
+  border-radius: 1rem 0rem 0 1rem;
+  margin-right: 10px;
 }
 
 .profile__card p {
-  outline: 1px red solid;
   flex-grow: 1;
-  margin: 0; /* remove any default margin */
+  margin: 0;
+  outline: 1px dashed orange;
+}
+.profile__country {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 200px;
+  text-align: center;
+}
+
+.profile__card h1 {
+  font-size: 2rem;
+}
+.profile__card h2 {
+  font-size: 1.5rem;
+}
+.flag {
+  width: 2rem;
+  margin-right: 10px;
+}
+
+button {
+  user-select: none;
+  width: 200px;
+  height: 125px;
+  background-color: lightcoral;
+  border-radius: 1rem;
+  margin-left: 25rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+  pointer-events: none;
 }
